@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis-Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .navbar-nav .nav-link {
+            position: relative;
+            padding-bottom: 6px;
+        }
+        .navbar-nav .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #0d6efd;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#0d1b2a;">
+    <div class="container">
+        <a class="navbar-brand" href="#home">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="py-5 text-center border-bottom" style="background-color: #f0f8ff;">
+    <div class="container py-4">
+        <p class="text-uppercase text-secondary fw-semibold mb-2">HELLO, I'M</p>
+        <h1 class="display-3 fw-bold text-dark mb-2">Denis</h1>
+        <h2 class="h4 text-bold mb-3">A beginner web developer</h2>
+        <p class="text-muted mx-auto mb-4" style="max-width: 500px">
+        I'm learning to build modern websites with HTML, CSS and Bootstrap. This is my simple portfolio to practice and showcase what I'm learning.
+        </p>
+        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+            <a href="#projects" class="btn btn-primary btn-lg px-4 me-sm-3">View My Work</a>
+            <a href="#contact" class="btn btn-outline-primary btn-lg px-4">Contact Me</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-5 bg-white border-bottom">
+    <div class="container">
+        <div class="row g-4 align-items-start">
+            <div class="col-md-7">
+                <p class="text-uppercase text-secondary fw-semibold mb-2">ABOUT</p>
+                <h2 class="display-6 fw-bold text-dark mb-2">A little about me</h2>
+                <p class="text-muted fw-semibold mb-4" style="max-width: 450px">
+                Hi, I'm Denis! I'm a beginner web developer who enjoys learning new technologies and building simple, useful projects. I'm currently focusing on HTML, CSS and Bootstrap, and I'm excited to keep improving my skills.
+                </p>
+            <div class="d-flex flex-wrap gap-3">
+                <span class="badge bg-primary-subtle text-primary fw-medium px-3 py-2 rounded-2">Curious</span>
+                <span class="badge bg-success-subtle text-success fw-medium px-3 py-2 rounded-2">Problem Solver</span>
+                <span class="badge fw-medium px-3 py-2 rounded-2" style="background-color: #f0e6ff; color: #6f42c1;">Always Learning</span>
+            </div>
+        </div>
+    <div class="col-md-5">
+        <div class="card bg-light border p-3 rounded-3">
+             <div class="card-body p-2">
+                <h5 class="fw-bold mb-3">Quick Facts</h5>
+                <table class="table table-sm mb-0">
+                    <tbody>
+                        <tr>
+                            <td class="fw-semibold text-dark ps-0">Name</td>
+                            <td class="text-secondary">Denis</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold text-dark ps-0">Age</td>
+                            <td class="text-secondary">22</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold text-dark ps-0">Role</td>
+                            <td class="text-secondary">Web Developer (Beginner)</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold text-dark ps-0">Interests</td>
+                            <td class="text-secondary">Web Design, UI, Learning</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold text-dark ps-0">Availability</td>
+                            <td class="text-secondary">Open to opportunities</td>
+                        </tr>
+                 </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="py-5 border-bottom" style="background-color: #f0f8ff">
+    <div class="container py-4">
+        <p class="text-uppercase text-secondary fw-semibold mb-2">SKILLS</p>
+        <h2 class="display-6 fw-bold text-dark mb-2">Skills I'm Learning</h2>
+
+
+    <div class="row g-4">
+        <div class="col-md-4">
+             <div class="d-flex justify-content-between small fw-bold mb-1">
+                 <span>HTML</span>
+                 <span class="text-muted">80%</span>
+             </div>
+            <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-danger" style="width: 80%;"></div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="d-flex justify-content-between small fw-bold mb-1">
+                <span>CSS</span>
+                <span class="text-muted">70%</span>
+            </div>
+            <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="d-flex justify-content-between small fw-bold mb-1">
+                <span>Bootstrap</span>
+                <span class="text-muted">60%</span>
+            </div>
+            <div class="progress" style="height: 8px;">
+                <div class="progress-bar" style="width: 60%; background-color: #6f42c1;"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="projects" class="py-5 border-bottom bg-white">
+    <div class="container py-4">
+        <p class="text-uppercase text-secondary fw-semibold mb-2">PROJECTS</p>
+        <h2 class="display-6 fw-bold text-dark mb-2">My Projects</h2>
+        <p class="text-muted fw-semibold mb-4">Here are a few simple projects I've built while learning Bootstrap.</p>
+
+    <div class="row g-4 w-100">
+            <div class="col-md-4">
+                <div class="card border rounded-3 p-3 bg-white">
+                    <div class="card-body p-0">
+                        <h4 class="fw-bold text-dark mb-2">Landing Page</h4>
+                        <p class="text-secondary small mb-3">A simple landing page built with<br>Bootstrap components.</p>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-primary btn-sm fw-semibold px-3 py-1 text-nowrap">View Project</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm fw-semibold px-3 py-1 text-dark border-secondary-subtle text-nowrap">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border rounded-3 p-3 bg-white">
+                    <div class="card-body p-0">
+                        <h4 class="fw-bold text-dark mb-2">To-Do List</h4>
+                        <p class="text-secondary small mb-3">A basic to-do list with a clean UI using<br>Bootstrap.</p>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-primary btn-sm fw-semibold px-3 py-1 text-nowrap">View Project</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm fw-semibold px-3 py-1 text-dark border-secondary-subtle text-nowrap">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="col-md-4">
+            <div class="card border rounded-3 p-3 bg-white">
+                <div class="card-body p-0">
+                    <h4 class="fw-bold text-dark mb-2">Portfolio Website</h4>
+                    <p class="text-secondary small mb-3">This portfolio website (a beginner<br>project).</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-primary btn-sm fw-semibold px-3 py-1 text-nowrap">View Project</a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm fw-semibold px-3 py-1 text-dark border-secondary-subtle text-nowrap">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5 border-bottom" style="background-color: #f0f8ff">
+    <div class="container py-4">
+        <h2 class="display-6 fw-bold text-dark mb-2">Get In Touch</h2>
+        <p class="text-secondary text-secondary fw-semibold mb-2">Feel free to send me a message. I'd love to hear from you!</p>
+            <div class="card border rounded-3 p-4 bg-white">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control form-control-sm border-secondary-subtle" id="userName" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-sm border-secondary-subtle" id="userEmail" placeholder="Your Email">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-control-sm border-secondary-subtle" id="userMessage" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button type="submit" class="btn btn-primary btn-sm fw-semibold px-4 py-2">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </div>
+</section>
+
+<footer class="py-4" style="background-color:#0d1b2a;">
+    <div class="container-fluid px-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="mb-3 mb-md-0 text-center text-md-start">
+            <h6 class="fw-bold mb-1 text-white">Denis</h6>
+            <p class="text-secondary small mb-0">Learning today. Building tomorrow.</p>
+        </div>
+
+        <div class="text-center text-md-end">
+            <div class="d-flex gap-3 justify-content-center justify-content-md-end mb-1">
+                <a href="#" class="text-secondary text-decoration-none small">GitHub</a>
+                <a href="#" class="text-secondary text-decoration-none small">LinkedIn</a>
+                <a href="#" class="text-secondary text-decoration-none small">Email</a>
+            </div>
+            <p class="text-secondary small mb-0">&copy; 2026 Denis. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
